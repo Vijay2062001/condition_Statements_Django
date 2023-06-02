@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home page</title>
+    <style>
+        body{
+            background-color: darkgoldenrod;
+          }
+
+        h1{
+            color: blueviolet;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        h2{
+            color: rgb(128, 226, 43);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        h3{
+            color: rgb(226, 43, 95);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1>
+            The moon, sun, river, clouds, mountain, rain, water and so on.
+        </h1>
+
+        {% if a > b %}
+            <h2>inside if block</h2>
+            <h3>{{a}} is greter then {{b}}</h3>
+            
+        {% else %}
+            <h2>inside else block</h2>
+        <   <h3><marquee>{{b}} is greter then {{a}}</marquee></h3>
+           
+        {% endif %}
+    </center>
+</body>
+</html>

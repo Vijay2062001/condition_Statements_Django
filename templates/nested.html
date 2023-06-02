@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Nestedifelse</h1>
+        {% if a > b %}
+            {% if a > c %}
+                {% if a > d %}
+                    <h1>a is max</h1>
+                {% else %}
+                    <h1>d is max</h1>
+                {% endif %}
+            {% else %}
+               {% if c > d %}
+                    <h1>c is max</h1>
+                {% else %}
+                    <h1>d is max</h1>
+                {% endif %}
+            {% endif %}
+        {% else %}
+            {% if b > c %}
+                {% if b > d %}
+                    <h1>b is max</h1>
+                {% else %}
+                    <h1>d is max</h1>
+                {% endif %}
+            {% else %}
+                {% if c > d %}
+                    <h1>c is max</h1>
+                {% else %}
+                    <h1>d is max</h1>
+                {% endif %}
+            {% endif %}
+        {% endif %}
+                    
+</html>
